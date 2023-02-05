@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ИздательствоDataSet2" targetNamespace="http://tempuri.org/ИздательствоDataSet2.xsd" xmlns:mstns="http://tempuri.org/ИздательствоDataSet2.xsd" xmlns="http://tempuri.org/ИздательствоDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ИздательствоConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ИздательствоConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.knizhnoeizdatelstvo.Properties.Settings.GlobalReference.Default.ИздательствоConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="РабСДоговорамиTableAdapter" GeneratorDataComponentClassName="РабСДоговорамиTableAdapter" Name="РабСДоговорами" UserDataComponentName="РабСДоговорамиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ИздательствоConnectionString (Settings)" DbObjectName="Издательство.dbo.РабСДоговорами" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Номер_договора, Рукопись_Id, Автор_Id, ФИО_Автора, ФИО_Сотрудника, Дата_подписания, Дата_окончания, Название_книги, Размер_Оплаты_Автору FROM dbo.РабСДоговорами</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер_договора" DataSetColumn="Номер_договора" />
+              <Mapping SourceColumn="Рукопись_Id" DataSetColumn="Рукопись_Id" />
+              <Mapping SourceColumn="Автор_Id" DataSetColumn="Автор_Id" />
+              <Mapping SourceColumn="ФИО_Автора" DataSetColumn="ФИО_Автора" />
+              <Mapping SourceColumn="ФИО_Сотрудника" DataSetColumn="ФИО_Сотрудника" />
+              <Mapping SourceColumn="Дата_подписания" DataSetColumn="Дата_подписания" />
+              <Mapping SourceColumn="Дата_окончания" DataSetColumn="Дата_окончания" />
+              <Mapping SourceColumn="Название_книги" DataSetColumn="Название_книги" />
+              <Mapping SourceColumn="Размер_Оплаты_Автору" DataSetColumn="Размер_Оплаты_Автору" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="РабсРукопTableAdapter" GeneratorDataComponentClassName="РабсРукопTableAdapter" Name="РабсРукоп" UserDataComponentName="РабсРукопTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ИздательствоConnectionString (Settings)" DbObjectName="Издательство.dbo.РабсРукоп" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Рукописи, Название_Рукописи, Автор_Id, ФИО_Автора, Жанр, Объем, Статус FROM dbo.РабсРукоп</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Рукописи" DataSetColumn="Id_Рукописи" />
+              <Mapping SourceColumn="Название_Рукописи" DataSetColumn="Название_Рукописи" />
+              <Mapping SourceColumn="Автор_Id" DataSetColumn="Автор_Id" />
+              <Mapping SourceColumn="ФИО_Автора" DataSetColumn="ФИО_Автора" />
+              <Mapping SourceColumn="Жанр" DataSetColumn="Жанр" />
+              <Mapping SourceColumn="Объем" DataSetColumn="Объем" />
+              <Mapping SourceColumn="Статус" DataSetColumn="Статус" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ИздательствоDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ИздательствоDataSet2" msprop:Generator_UserDSName="ИздательствоDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="РабСДоговорами" msprop:Generator_TableClassName="РабСДоговорамиDataTable" msprop:Generator_TableVarName="tableРабСДоговорами" msprop:Generator_TablePropName="РабСДоговорами" msprop:Generator_RowDeletingName="РабСДоговорамиRowDeleting" msprop:Generator_RowChangingName="РабСДоговорамиRowChanging" msprop:Generator_RowEvHandlerName="РабСДоговорамиRowChangeEventHandler" msprop:Generator_RowDeletedName="РабСДоговорамиRowDeleted" msprop:Generator_UserTableName="РабСДоговорами" msprop:Generator_RowChangedName="РабСДоговорамиRowChanged" msprop:Generator_RowEvArgName="РабСДоговорамиRowChangeEvent" msprop:Generator_RowClassName="РабСДоговорамиRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_договора" msprop:Generator_ColumnVarNameInTable="columnНомер_договора" msprop:Generator_ColumnPropNameInRow="Номер_договора" msprop:Generator_ColumnPropNameInTable="Номер_договораColumn" msprop:Generator_UserColumnName="Номер_договора" type="xs:int" />
+              <xs:element name="Рукопись_Id" msprop:Generator_ColumnVarNameInTable="columnРукопись_Id" msprop:Generator_ColumnPropNameInRow="Рукопись_Id" msprop:Generator_ColumnPropNameInTable="Рукопись_IdColumn" msprop:Generator_UserColumnName="Рукопись_Id" type="xs:int" />
+              <xs:element name="Автор_Id" msprop:Generator_ColumnVarNameInTable="columnАвтор_Id" msprop:Generator_ColumnPropNameInRow="Автор_Id" msprop:Generator_ColumnPropNameInTable="Автор_IdColumn" msprop:Generator_UserColumnName="Автор_Id" type="xs:int" />
+              <xs:element name="ФИО_Автора" msprop:Generator_ColumnVarNameInTable="columnФИО_Автора" msprop:Generator_ColumnPropNameInRow="ФИО_Автора" msprop:Generator_ColumnPropNameInTable="ФИО_АвтораColumn" msprop:Generator_UserColumnName="ФИО_Автора">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_Сотрудника" msprop:Generator_ColumnVarNameInTable="columnФИО_Сотрудника" msprop:Generator_ColumnPropNameInRow="ФИО_Сотрудника" msprop:Generator_ColumnPropNameInTable="ФИО_СотрудникаColumn" msprop:Generator_UserColumnName="ФИО_Сотрудника">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_подписания" msprop:Generator_ColumnVarNameInTable="columnДата_подписания" msprop:Generator_ColumnPropNameInRow="Дата_подписания" msprop:Generator_ColumnPropNameInTable="Дата_подписанияColumn" msprop:Generator_UserColumnName="Дата_подписания" type="xs:dateTime" />
+              <xs:element name="Дата_окончания" msprop:Generator_ColumnVarNameInTable="columnДата_окончания" msprop:Generator_ColumnPropNameInRow="Дата_окончания" msprop:Generator_ColumnPropNameInTable="Дата_окончанияColumn" msprop:Generator_UserColumnName="Дата_окончания" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Название_книги" msprop:Generator_ColumnVarNameInTable="columnНазвание_книги" msprop:Generator_ColumnPropNameInRow="Название_книги" msprop:Generator_ColumnPropNameInTable="Название_книгиColumn" msprop:Generator_UserColumnName="Название_книги" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Размер_Оплаты_Автору" msprop:Generator_ColumnVarNameInTable="columnРазмер_Оплаты_Автору" msprop:Generator_ColumnPropNameInRow="Размер_Оплаты_Автору" msprop:Generator_ColumnPropNameInTable="Размер_Оплаты_АвторуColumn" msprop:Generator_UserColumnName="Размер_Оплаты_Автору" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="РабсРукоп" msprop:Generator_TableClassName="РабсРукопDataTable" msprop:Generator_TableVarName="tableРабсРукоп" msprop:Generator_TablePropName="РабсРукоп" msprop:Generator_RowDeletingName="РабсРукопRowDeleting" msprop:Generator_RowChangingName="РабсРукопRowChanging" msprop:Generator_RowEvHandlerName="РабсРукопRowChangeEventHandler" msprop:Generator_RowDeletedName="РабсРукопRowDeleted" msprop:Generator_UserTableName="РабсРукоп" msprop:Generator_RowChangedName="РабсРукопRowChanged" msprop:Generator_RowEvArgName="РабсРукопRowChangeEvent" msprop:Generator_RowClassName="РабсРукопRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Рукописи" msprop:Generator_ColumnVarNameInTable="columnId_Рукописи" msprop:Generator_ColumnPropNameInRow="Id_Рукописи" msprop:Generator_ColumnPropNameInTable="Id_РукописиColumn" msprop:Generator_UserColumnName="Id_Рукописи" type="xs:int" />
+              <xs:element name="Название_Рукописи" msprop:Generator_ColumnVarNameInTable="columnНазвание_Рукописи" msprop:Generator_ColumnPropNameInRow="Название_Рукописи" msprop:Generator_ColumnPropNameInTable="Название_РукописиColumn" msprop:Generator_UserColumnName="Название_Рукописи">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Автор_Id" msprop:Generator_ColumnVarNameInTable="columnАвтор_Id" msprop:Generator_ColumnPropNameInRow="Автор_Id" msprop:Generator_ColumnPropNameInTable="Автор_IdColumn" msprop:Generator_UserColumnName="Автор_Id" type="xs:int" />
+              <xs:element name="ФИО_Автора" msprop:Generator_ColumnVarNameInTable="columnФИО_Автора" msprop:Generator_ColumnPropNameInRow="ФИО_Автора" msprop:Generator_ColumnPropNameInTable="ФИО_АвтораColumn" msprop:Generator_UserColumnName="ФИО_Автора">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Жанр" msprop:Generator_ColumnVarNameInTable="columnЖанр" msprop:Generator_ColumnPropNameInRow="Жанр" msprop:Generator_ColumnPropNameInTable="ЖанрColumn" msprop:Generator_UserColumnName="Жанр" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Объем" msprop:Generator_ColumnVarNameInTable="columnОбъем" msprop:Generator_ColumnPropNameInRow="Объем" msprop:Generator_ColumnPropNameInTable="ОбъемColumn" msprop:Generator_UserColumnName="Объем" type="xs:int" minOccurs="0" />
+              <xs:element name="Статус" msprop:Generator_ColumnVarNameInTable="columnСтатус" msprop:Generator_ColumnPropNameInRow="Статус" msprop:Generator_ColumnPropNameInTable="СтатусColumn" msprop:Generator_UserColumnName="Статус" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:РабСДоговорами" />
+      <xs:field xpath="mstns:Номер_договора" />
+    </xs:unique>
+    <xs:unique name="РабсРукоп_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:РабсРукоп" />
+      <xs:field xpath="mstns:Id_Рукописи" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
